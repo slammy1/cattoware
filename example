@@ -33,14 +33,17 @@ ColorToggle:AddColorpicker(Color3.fromRGB(75, 0,130), function(ztx)
    
 end)
 
-local ToggleBind = testSection:AddToggle("Keybind w/Toggle", false, function(e)
+local ToggleBind = testSection:AddKeybind("Keybind", false, function(e)
 
 end)
 
+
+
+ToggleBind:AddKeybind()
 
 testSection:AddLabel("label", function(State)
 end)
 
-ToggleBind:AddKeybind()
+
 
 AimingTab:CreateConfigSystem("right") --this is the config system
