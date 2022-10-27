@@ -19,8 +19,8 @@ local mouse = player:GetMouse()
 local camera = game.Workspace.CurrentCamera
 
 library.theme = {
-	fontsize = 13,
-	titlesize = 20,
+	fontsize = 17,
+	titlesize = 13,
 	font = Enum.Font.Code,
 	background = "rbxassetid://6071575925",
 	tilesize = 90,
@@ -48,7 +48,7 @@ if library.theme.cursor and Drawing then
 	local success = pcall(function() 
 		library.cursor = Drawing.new("Image")
 		library.cursor.Data = game:HttpGet(library.theme.cursorimg)
-		library.cursor.Size = Vector2.new(64, 64)
+		library.cursor.Size = Vector2.new(200, 200)
 		library.cursor.Visible = uis.MouseEnabled
 		library.cursor.Rounding = 0
 		library.cursor.Position = Vector2.new(mouse.X - 32, mouse.Y + 6)
